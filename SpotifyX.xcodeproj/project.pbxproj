@@ -24,6 +24,11 @@
 		3F62AABA29350692009EE5E4 /* SXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAB929350692009EE5E4 /* SXTableViewCell.swift */; };
 		3F62AABE2935A030009EE5E4 /* SXStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AABD2935A030009EE5E4 /* SXStorageProtocol.swift */; };
 		3F62AAC12935A450009EE5E4 /* SXLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC02935A450009EE5E4 /* SXLocalStorage.swift */; };
+		3F62AAC42935B569009EE5E4 /* SXThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC32935B569009EE5E4 /* SXThemeProtocol.swift */; };
+		3F62AAC62935B5A0009EE5E4 /* SXTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC52935B5A0009EE5E4 /* SXTheme.swift */; };
+		3F62AACB2935B804009EE5E4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AACA2935B804009EE5E4 /* Color.swift */; };
+		3F62AACE2936080C009EE5E4 /* SXThemeAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AACD2936080C009EE5E4 /* SXThemeAssistant.swift */; };
+		3F62AAD129360EC8009EE5E4 /* SXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAD029360EC8009EE5E4 /* SXImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		3F62AAB929350692009EE5E4 /* SXTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXTableViewCell.swift; sourceTree = "<group>"; };
 		3F62AABD2935A030009EE5E4 /* SXStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXStorageProtocol.swift; sourceTree = "<group>"; };
 		3F62AAC02935A450009EE5E4 /* SXLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXLocalStorage.swift; sourceTree = "<group>"; };
+		3F62AAC32935B569009EE5E4 /* SXThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXThemeProtocol.swift; sourceTree = "<group>"; };
+		3F62AAC52935B5A0009EE5E4 /* SXTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXTheme.swift; sourceTree = "<group>"; };
+		3F62AACA2935B804009EE5E4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3F62AACD2936080C009EE5E4 /* SXThemeAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXThemeAssistant.swift; sourceTree = "<group>"; };
+		3F62AAD029360EC8009EE5E4 /* SXImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		3F62AA812934EB5C009EE5E4 /* SpotifyX */ = {
 			isa = PBXGroup;
 			children = (
+				3F62AAC72935B7A1009EE5E4 /* Utilities */,
 				3F62AAA429350329009EE5E4 /* Modules */,
 				3F62AA992934ED17009EE5E4 /* Controller */,
 				3F62AA822934EB5C009EE5E4 /* AppDelegate.swift */,
@@ -113,6 +124,7 @@
 		3F62AAA529350348009EE5E4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3F62AACC293607DA009EE5E4 /* Theme */,
 				3F62AABF2935A425009EE5E4 /* Storage */,
 				3F62AABB29359F94009EE5E4 /* View */,
 			);
@@ -122,6 +134,7 @@
 		3F62AAA62935034E009EE5E4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3F62AAC22935B4CD009EE5E4 /* Theme */,
 				3F62AABC29359FC3009EE5E4 /* Storage */,
 			);
 			path = Domain;
@@ -184,6 +197,7 @@
 				3F62AAAC2935051A009EE5E4 /* SXViewController.swift */,
 				3F62AAB32935056C009EE5E4 /* SXTabBar */,
 				3F62AAB02935055D009EE5E4 /* SXNavigationController.swift */,
+				3F62AAD029360EC8009EE5E4 /* SXImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +216,47 @@
 				3F62AAC02935A450009EE5E4 /* SXLocalStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		3F62AAC22935B4CD009EE5E4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3F62AAC32935B569009EE5E4 /* SXThemeProtocol.swift */,
+				3F62AAC52935B5A0009EE5E4 /* SXTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		3F62AAC72935B7A1009EE5E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3F62AAC82935B7C6009EE5E4 /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3F62AAC82935B7C6009EE5E4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3F62AAC92935B7DA009EE5E4 /* Custom Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3F62AAC92935B7DA009EE5E4 /* Custom Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F62AACA2935B804009EE5E4 /* Color.swift */,
+			);
+			path = "Custom Extensions";
+			sourceTree = "<group>";
+		};
+		3F62AACC293607DA009EE5E4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3F62AACD2936080C009EE5E4 /* SXThemeAssistant.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F62AAC42935B569009EE5E4 /* SXThemeProtocol.swift in Sources */,
 				3F62AA9F2934F9A2009EE5E4 /* SearchViewController.swift in Sources */,
 				3F62AAAF29350531009EE5E4 /* SXTabBarController.swift in Sources */,
 				3F62AAB12935055D009EE5E4 /* SXNavigationController.swift in Sources */,
 				3F62AA9D2934F94D009EE5E4 /* RootViewController.swift in Sources */,
+				3F62AAC62935B5A0009EE5E4 /* SXTheme.swift in Sources */,
 				3F62AA9B2934ED5F009EE5E4 /* HomeViewController.swift in Sources */,
 				3F62AAB529350587009EE5E4 /* SXTabBarItem.swift in Sources */,
 				3F62AABE2935A030009EE5E4 /* SXStorageProtocol.swift in Sources */,
+				3F62AAD129360EC8009EE5E4 /* SXImageView.swift in Sources */,
 				3F62AAAD2935051A009EE5E4 /* SXViewController.swift in Sources */,
 				3F62AA832934EB5C009EE5E4 /* AppDelegate.swift in Sources */,
 				3F62AAB829350669009EE5E4 /* SXTableViewController.swift in Sources */,
@@ -288,7 +346,9 @@
 				3F62AA852934EB5C009EE5E4 /* SceneDelegate.swift in Sources */,
 				3F62AABA29350692009EE5E4 /* SXTableViewCell.swift in Sources */,
 				3F62AAC12935A450009EE5E4 /* SXLocalStorage.swift in Sources */,
+				3F62AACE2936080C009EE5E4 /* SXThemeAssistant.swift in Sources */,
 				3F62AA8D2934EB5C009EE5E4 /* SpotifyX.xcdatamodeld in Sources */,
+				3F62AACB2935B804009EE5E4 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

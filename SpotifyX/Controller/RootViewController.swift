@@ -21,8 +21,6 @@ class RootViewController: SXTabBarController {
             searchViewController,
             libraryViewController
         ]
-        
-        tabBar.backgroundColor = .systemBackground
     }
     
     
