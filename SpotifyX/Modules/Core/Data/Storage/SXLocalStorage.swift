@@ -9,11 +9,13 @@ import Foundation
 
 class SXLocalStorage: SXStorageProtocol {
     
+    static let shared: SXStorageProtocol = SXLocalStorage()
+    
     private let userDefaults = UserDefaults.standard
     
     func exsist(
         key: String
-    ) async -> Bool {
+    ) -> Bool {
         let encodedValue = userDefaults.object(forKey: key)
         
         return encodedValue != nil
@@ -22,8 +24,8 @@ class SXLocalStorage: SXStorageProtocol {
     func store<T>(
         key: String,
         value: T
-    ) async throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
-        if await exsist(key: key) {
+    ) throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
+        if exsist(key: key) {
             throw SXStoreFailure.keyAlreadyExsist
         }
         
@@ -32,7 +34,7 @@ class SXLocalStorage: SXStorageProtocol {
             
             let encodedValue = try encoder.encode(value)
             
-            userDefaults.set(value, forKey: key)
+            userDefaults.set(encodedValue, forKey: key)
             
             let result = (key: key,value: value)
             
@@ -44,8 +46,8 @@ class SXLocalStorage: SXStorageProtocol {
     
     func retrive<T>(
         key: String
-    ) async throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
-        if !(await exsist(key: key)) {
+    ) throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
+        if !(exsist(key: key)) {
             throw SXRetriveFailure.keyNotFound
         }
         
@@ -67,8 +69,8 @@ class SXLocalStorage: SXStorageProtocol {
     func update<T>(
         key: String,
         value: T
-    ) async throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
-        if !(await exsist(key: key)) {
+    ) throws -> SXStoreElement<T> where T : Decodable, T : Encodable {
+        if !(exsist(key: key)) {
             throw SXUpdateFailure.keyNotFound
         }
         

@@ -35,14 +35,14 @@ protocol SXStorageProtocol {
     func store<T: StorableX>(
         key: String,
         value: T
-    ) async throws -> SXStoreElement<T>
+    ) throws -> SXStoreElement<T>
     
     func retrive<T: StorableX>(
         key: String
-    ) async throws -> SXStoreElement<T>
+    ) throws -> SXStoreElement<T>
     
     func update<T: StorableX>(
         key: String,
         value: T
-    ) async throws -> SXStoreElement<T>
+    ) throws -> SXStoreElement<T>
 }
