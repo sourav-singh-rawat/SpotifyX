@@ -153,3 +153,49 @@ extension UIView {
         ])
     }
 }
+
+//MARK: - Dimensions
+extension UIView {
+    func size(_ side: Double) {
+        NSLayoutConstraint.activate([
+            self.widthAnchor.constraint(equalToConstant: side),
+            self.heightAnchor.constraint(equalTo: self.widthAnchor)
+        ])
+    }
+    
+    func width(_ width: Double) {
+        NSLayoutConstraint.activate([
+            self.widthAnchor.constraint(equalToConstant: width)
+        ])
+    }
+    
+    func height(_ height: Double) {
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: height)
+        ])
+    }
+    
+    func constraintWidth(min width: Double){
+        NSLayoutConstraint.activate([
+            self.widthAnchor.constraint(greaterThanOrEqualToConstant: width)
+        ])
+    }
+    
+    func constraintHeight(min height: Double){
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(greaterThanOrEqualToConstant: height)
+        ])
+    }
+    
+    func constraintWidth(max width: Double){
+        NSLayoutConstraint.activate([
+            self.widthAnchor.constraint(lessThanOrEqualToConstant: width)
+        ])
+    }
+    
+    func constraintHeight(max height: Double){
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(lessThanOrEqualToConstant: height)
+        ])
+    }
+}
