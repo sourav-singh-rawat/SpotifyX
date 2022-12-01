@@ -17,7 +17,7 @@ extension UIView {
 extension UIView {
     func padding(
         to view: UIView,
-        withInsets insets: SXEdgeInsets?,
+        withInsets insets: SXEdgeInsets? = nil,
         withSafeAreaAware safeAreaAware: Bool = false
     ) {
         NSLayoutConstraint.activate([
@@ -194,6 +194,18 @@ extension UIView {
     func constraintHeight(max height: Double){
         NSLayoutConstraint.activate([
             self.heightAnchor.constraint(lessThanOrEqualToConstant: height)
+        ])
+    }
+    
+    func matchWidth(of view: UIView) {
+        NSLayoutConstraint.activate([
+            self.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+    }
+    
+    func matchHeight(of view: UIView) {
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
     }
 }
