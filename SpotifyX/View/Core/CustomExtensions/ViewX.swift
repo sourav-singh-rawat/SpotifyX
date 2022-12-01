@@ -3,7 +3,7 @@
 //  SpotifyX
 //
 //  Created by Sourav Singh Rawat on 30/11/22.
-//
+//  Genric functions required by all the sub-classes of UIView (in swift almost every class)
 
 import UIKit
 
@@ -11,8 +11,6 @@ extension UIView {
     func enableAutolayout() {
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    
-    
 }
 
 //MARK: - Padding

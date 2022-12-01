@@ -8,5 +8,7 @@
 import UIKit
 
 class SXLabel: UILabel {
-    
+    func fontSize(_ size: Double){
+        self.font.withSize(size)
+    }
 }

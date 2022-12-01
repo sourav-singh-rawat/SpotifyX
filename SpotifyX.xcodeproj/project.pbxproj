@@ -25,7 +25,6 @@
 		3F62AAC12935A450009EE5E4 /* SXLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC02935A450009EE5E4 /* SXLocalStorage.swift */; };
 		3F62AAC42935B569009EE5E4 /* SXThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC32935B569009EE5E4 /* SXThemeProtocol.swift */; };
 		3F62AAC62935B5A0009EE5E4 /* SXTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAC52935B5A0009EE5E4 /* SXTheme.swift */; };
-		3F62AACB2935B804009EE5E4 /* ColorX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AACA2935B804009EE5E4 /* ColorX.swift */; };
 		3F62AACE2936080C009EE5E4 /* SXThemeAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AACD2936080C009EE5E4 /* SXThemeAssistant.swift */; };
 		3F62AAD129360EC8009EE5E4 /* SXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62AAD029360EC8009EE5E4 /* SXImageView.swift */; };
 		3FB497F12937530100E4C03D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB497F02937530100E4C03D /* HomeView.swift */; };
@@ -36,7 +35,8 @@
 		3FB497FD2938342800E4C03D /* HomeMainNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB497FC2938342800E4C03D /* HomeMainNav.swift */; };
 		3FB497FF2938352200E4C03D /* SXLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB497FE2938352200E4C03D /* SXLabel.swift */; };
 		3FB49802293839EB00E4C03D /* SXEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49801293839EB00E4C03D /* SXEdgeInsets.swift */; };
-		3FB4980729384D2A00E4C03D /* LableX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4980629384D2A00E4C03D /* LableX.swift */; };
+		3FB4980929384E1100E4C03D /* SXStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4980829384E1100E4C03D /* SXStackView.swift */; };
+		3FB4980B29384F4400E4C03D /* SXColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4980A29384F4400E4C03D /* SXColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +60,6 @@
 		3F62AAC02935A450009EE5E4 /* SXLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXLocalStorage.swift; sourceTree = "<group>"; };
 		3F62AAC32935B569009EE5E4 /* SXThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXThemeProtocol.swift; sourceTree = "<group>"; };
 		3F62AAC52935B5A0009EE5E4 /* SXTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXTheme.swift; sourceTree = "<group>"; };
-		3F62AACA2935B804009EE5E4 /* ColorX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorX.swift; sourceTree = "<group>"; };
 		3F62AACD2936080C009EE5E4 /* SXThemeAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXThemeAssistant.swift; sourceTree = "<group>"; };
 		3F62AAD029360EC8009EE5E4 /* SXImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXImageView.swift; sourceTree = "<group>"; };
 		3FB497F02937530100E4C03D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -71,7 +70,8 @@
 		3FB497FC2938342800E4C03D /* HomeMainNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainNav.swift; sourceTree = "<group>"; };
 		3FB497FE2938352200E4C03D /* SXLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXLabel.swift; sourceTree = "<group>"; };
 		3FB49801293839EB00E4C03D /* SXEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXEdgeInsets.swift; sourceTree = "<group>"; };
-		3FB4980629384D2A00E4C03D /* LableX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableX.swift; sourceTree = "<group>"; };
+		3FB4980829384E1100E4C03D /* SXStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXStackView.swift; sourceTree = "<group>"; };
+		3FB4980A29384F4400E4C03D /* SXColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,9 +250,7 @@
 		3F62AAC92935B7DA009EE5E4 /* CustomExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				3F62AACA2935B804009EE5E4 /* ColorX.swift */,
 				3FB497FA2937593400E4C03D /* ViewX.swift */,
-				3FB4980629384D2A00E4C03D /* LableX.swift */,
 			);
 			path = CustomExtensions;
 			sourceTree = "<group>";
@@ -336,6 +334,8 @@
 				3FB497F22937537600E4C03D /* SXButton.swift */,
 				3FB497F8293758E000E4C03D /* SXView.swift */,
 				3FB497FE2938352200E4C03D /* SXLabel.swift */,
+				3FB4980829384E1100E4C03D /* SXStackView.swift */,
+				3FB4980A29384F4400E4C03D /* SXColor.swift */,
 			);
 			path = ViewWrapper;
 			sourceTree = "<group>";
@@ -419,6 +419,7 @@
 			files = (
 				3F62AAC42935B569009EE5E4 /* SXThemeProtocol.swift in Sources */,
 				3F62AA9F2934F9A2009EE5E4 /* SearchViewController.swift in Sources */,
+				3FB4980B29384F4400E4C03D /* SXColor.swift in Sources */,
 				3FB497FD2938342800E4C03D /* HomeMainNav.swift in Sources */,
 				3F62AAAF29350531009EE5E4 /* SXTabBarController.swift in Sources */,
 				3FB497FB2937593400E4C03D /* ViewX.swift in Sources */,
@@ -430,20 +431,19 @@
 				3FB497F32937537600E4C03D /* SXButton.swift in Sources */,
 				3F62AABE2935A030009EE5E4 /* SXStorageProtocol.swift in Sources */,
 				3F62AAD129360EC8009EE5E4 /* SXImageView.swift in Sources */,
+				3FB4980929384E1100E4C03D /* SXStackView.swift in Sources */,
 				3F62AAAD2935051A009EE5E4 /* SXViewController.swift in Sources */,
 				3F62AA832934EB5C009EE5E4 /* AppDelegate.swift in Sources */,
 				3F62AAB829350669009EE5E4 /* SXTableViewController.swift in Sources */,
 				3FB497F9293758E000E4C03D /* SXView.swift in Sources */,
 				3F62AAA12934F9B6009EE5E4 /* LibraryViewController.swift in Sources */,
 				3F62AA852934EB5C009EE5E4 /* SceneDelegate.swift in Sources */,
-				3FB4980729384D2A00E4C03D /* LableX.swift in Sources */,
 				3FB497F12937530100E4C03D /* HomeView.swift in Sources */,
 				3F62AABA29350692009EE5E4 /* SXTableViewCell.swift in Sources */,
 				3FB49802293839EB00E4C03D /* SXEdgeInsets.swift in Sources */,
 				3F62AAC12935A450009EE5E4 /* SXLocalStorage.swift in Sources */,
 				3F62AACE2936080C009EE5E4 /* SXThemeAssistant.swift in Sources */,
 				3F62AA8D2934EB5C009EE5E4 /* SpotifyX.xcdatamodeld in Sources */,
-				3F62AACB2935B804009EE5E4 /* ColorX.swift in Sources */,
 				3FB497FF2938352200E4C03D /* SXLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
